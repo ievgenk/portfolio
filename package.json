@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "normalize-scss": "^7.0.1"
   },
   "scripts": {
     "start": "parcel ./html/index.html"

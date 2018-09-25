@@ -1,0 +1,10 @@
+nav {
+  ul {
+    li {
+      list-style: none;
+      a {
+        @include navLinksNoStyle;
+      }
+    }
+  }
+}
