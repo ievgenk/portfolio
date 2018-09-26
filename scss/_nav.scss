@@ -3,19 +3,35 @@ nav {
   justify-content: center;
   align-content: center;
   width: 100%;
-  min-height: 5rem;
-  height: fit-content;
+  height: 5rem;
   position: fixed;
   top: 0;
-  border: 1px solid red;
+  border: 1px solid black;
+  font-size: 2rem;
+
+  #logo {
+    flex: 0 1 100%;
+    align-self: center;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
   ul {
-    padding: 0;
+    @include easeOut();
+    top: 6rem;
+    text-align: center;
+    padding: 0 0 0 10px;
     margin: 0;
+    width: 90%;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    display: block;
+    position: absolute;
     li {
       padding: 5px 0px;
       list-style: none;
       a {
-        @include navLinksNoStyle;
+        @include navLinksNoStyle();
       }
     }
   }
@@ -26,7 +42,8 @@ nav {
   align-self: center;
   margin-right: 1.2rem;
   position: absolute;
-  right: 0px;
+  right: 0rem;
+
   .btn-line {
     width: 28px;
     height: 3px;
@@ -35,8 +52,9 @@ nav {
     @include easeOut();
   }
   &.close {
-    transform: rotate(180deg);
+    top: 1rem;
 
+    transform: rotate(180deg);
     .btn-line {
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
