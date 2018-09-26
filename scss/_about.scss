@@ -12,13 +12,9 @@
   flex-wrap: wrap;
   z-index: -2;
   #avatar {
-    background-image: url("../images/avatar.svg");
-    background-size: cover;
-    height: 150px;
-    width: 150px;
-    display: inline-block;
+    @include svg("../images/avatar.svg", 150px, 150px);
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     justify-self: center;
   }
 

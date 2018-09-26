@@ -7,6 +7,8 @@ nav {
   position: fixed;
   top: 0;
   font-size: 2rem;
+  z-index: 1;
+  background-color: #fff;
 
   #logo {
     flex: 0 1 100%;
@@ -50,7 +52,7 @@ nav {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #555;
+    background: #4383a3;
     @include easeOut();
   }
   &.close {

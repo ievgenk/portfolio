@@ -815,7 +815,9 @@ nav {
   height: 5rem;
   position: fixed;
   top: 0;
-  font-size: 2rem; }
+  font-size: 2rem;
+  z-index: 1;
+  background-color: #fff; }
   nav #logo {
     flex: 0 1 100%;
     align-self: center;
@@ -852,7 +854,7 @@ nav {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #555;
+    background: #4383a3;
     transition: all 0.5s ease-out; }
   #hamburger-menu.close {
     top: 1rem;
@@ -891,12 +893,14 @@ main {
   z-index: -2; }
   #about #avatar {
     background-image: url("avatar.713aa54e.svg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 150px;
     width: 150px;
     display: inline-block;
+    overflow: visible;
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     justify-self: center; }
   #about .card-top {
     width: 100%;
@@ -906,6 +910,48 @@ main {
   #about #heading {
     text-align: center;
     font-size: 1.3rem; }
+
+#bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #bio h1 {
+    margin-bottom: 0; }
+  #bio .headline-underline {
+    border: 0;
+    height: 2px;
+    width: 3rem;
+    border-top: 2px solid #4383a3; }
+  #bio .bio-container {
+    padding: 0rem 2rem; }
+    #bio .bio-container .bio-text {
+      max-width: 40rem;
+      line-height: 2.2rem;
+      font-size: 2rem;
+      text-align: left;
+      letter-spacing: 0.2px; }
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #skills #hovering-laptop {
+    background-image: url("laptop.64c9d1e3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    overflow: visible; }
+  #skills h1 {
+    margin-bottom: 0; }
+  #skills .headline-underline {
+    border: 0;
+    height: 2px;
+    width: 3rem;
+    border-top: 2px solid #4383a3; }
 
 body,
 html {

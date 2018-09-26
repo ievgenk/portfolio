@@ -1,0 +1,13 @@
+#skills {
+  #hovering-laptop {
+    @include svg("../images/laptop.svg", 100px, 100px);
+  }
+
+  @include sectionFlexBox();
+  h1 {
+    @include sectionHeader();
+  }
+  .headline-underline {
+    @include headlineUnderline();
+  }
+}

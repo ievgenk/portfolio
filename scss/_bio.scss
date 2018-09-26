@@ -1,0 +1,19 @@
+#bio {
+  @include sectionFlexBox();
+  h1 {
+    @include sectionHeader();
+  }
+  .headline-underline {
+    @include headlineUnderline();
+  }
+  .bio-container {
+    padding: 0rem 2rem;
+    .bio-text {
+      max-width: 40rem;
+      line-height: 2.2rem;
+      font-size: 2rem;
+      text-align: left;
+      letter-spacing: 0.2px;
+    }
+  }
+}

@@ -6,3 +6,30 @@
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+@mixin headlineUnderline {
+  border: 0;
+  height: 2px;
+  width: 3rem;
+  border-top: 2px solid #4383a3;
+}
+
+@mixin sectionHeader {
+  margin-bottom: 0;
+}
+@mixin sectionFlexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin svg($url, $width, $height) {
+  background-image: url($url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: $height;
+  width: $width;
+  display: inline-block;
+  overflow: visible;
+}
