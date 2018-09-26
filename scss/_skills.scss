@@ -1,6 +1,26 @@
 #skills {
   #hovering-laptop {
-    @include svg("../images/laptop.svg", 100px, 100px);
+    @include svg("../images/laptop.svg", 120px, 120px);
+    position: relative;
+    top: -8rem;
+    left: 10rem;
+    &.floating {
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes floating {
+      from {
+        transform: translate(0, 0px);
+      }
+      65% {
+        transform: translate(0, 15px);
+      }
+      to {
+        transform: translate(0, -0px);
+      }
+    }
   }
 
   @include sectionFlexBox();

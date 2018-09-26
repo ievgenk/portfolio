@@ -941,10 +941,26 @@ main {
     background-image: url("laptop.64c9d1e3.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     display: inline-block;
-    overflow: visible; }
+    overflow: visible;
+    position: relative;
+    top: -8rem;
+    left: 10rem; }
+    #skills #hovering-laptop.floating {
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out; }
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px); }
+  65% {
+    transform: translate(0, 15px); }
+  to {
+    transform: translate(0, 0px); } }
   #skills h1 {
     margin-bottom: 0; }
   #skills .headline-underline {
