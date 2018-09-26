@@ -1,0 +1,9 @@
+#projects {
+  @include sectionFlexBox();
+  h1 {
+    @include sectionHeader();
+  }
+  .headline-underline {
+    @include headlineUnderline();
+  }
+}

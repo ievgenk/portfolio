@@ -4,6 +4,8 @@
     position: relative;
     top: -8rem;
     left: 10rem;
+    margin: 0;
+    padding: 0;
     &.floating {
       animation-name: floating;
       animation-duration: 3s;
@@ -29,5 +31,39 @@
   }
   .headline-underline {
     @include headlineUnderline();
+  }
+  .skill-header {
+    align-self: flex-start;
+    padding-left: 1.3rem;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .skill-header::before {
+    background-color: #1bc29e;
+    border-radius: 3px;
+    box-shadow: 0 0 0 6px rgba(67, 131, 163, 0.2);
+    content: "";
+    display: inline-block;
+    min-height: 7px;
+    margin-right: 1rem;
+    min-width: 7px;
+    margin-bottom: 1px;
+  }
+  .skills-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    svg {
+      width: 5rem;
+      height: 5rem;
+      flex: 1;
+    }
+  }
+  .skills-container.back-end {
+    svg {
+      height: rem;
+      flex: 1 1 auto;
+    }
   }
 }

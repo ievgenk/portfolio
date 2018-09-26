@@ -817,7 +817,8 @@ nav {
   top: 0;
   font-size: 2rem;
   z-index: 1;
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2); }
   nav #logo {
     flex: 0 1 100%;
     align-self: center;
@@ -947,7 +948,9 @@ main {
     overflow: visible;
     position: relative;
     top: -8rem;
-    left: 10rem; }
+    left: 10rem;
+    margin: 0;
+    padding: 0; }
     #skills #hovering-laptop.floating {
       animation-name: floating;
       animation-duration: 3s;
@@ -964,6 +967,46 @@ main {
   #skills h1 {
     margin-bottom: 0; }
   #skills .headline-underline {
+    border: 0;
+    height: 2px;
+    width: 3rem;
+    border-top: 2px solid #4383a3; }
+  #skills .skill-header {
+    align-self: flex-start;
+    padding-left: 1.3rem;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  #skills .skill-header::before {
+    background-color: #1bc29e;
+    border-radius: 3px;
+    box-shadow: 0 0 0 6px rgba(67, 131, 163, 0.2);
+    content: "";
+    display: inline-block;
+    min-height: 7px;
+    margin-right: 1rem;
+    min-width: 7px;
+    margin-bottom: 1px; }
+  #skills .skills-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    #skills .skills-container svg {
+      width: 5rem;
+      height: 5rem;
+      flex: 1; }
+  #skills .skills-container.back-end svg {
+    height: rem;
+    flex: 1 1 auto; }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #projects h1 {
+    margin-bottom: 0; }
+  #projects .headline-underline {
     border: 0;
     height: 2px;
     width: 3rem;
