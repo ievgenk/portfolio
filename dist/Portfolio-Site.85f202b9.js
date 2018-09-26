@@ -173,6 +173,35 @@ module.hot.accept(reloadCSS);
 "use strict";
 
 require("./scss/index.scss");
+
+// DOM Varialbes
+
+var hamburgerMenu = document.getElementById("hamburger-menu");
+var nav = document.querySelector(".nav");
+
+// DOM Store
+
+var STORE = {
+  hamurgerMenuOpen: false
+};
+
+// Functions
+
+var toggleMenu = function toggleMenu() {
+  if (!STORE.hamurgerMenuOpen) {
+    nav.classList.remove("hidden");
+    hamburgerMenu.classList.add("close");
+    STORE.hamurgerMenuOpen = true;
+  } else {
+    nav.classList.add("hidden");
+    hamburgerMenu.classList.remove("close");
+    STORE.hamurgerMenuOpen = false;
+  }
+};
+
+// Event Listeners
+
+hamburgerMenu.addEventListener("click", toggleMenu);
 },{"./scss/index.scss":"..\\scss\\index.scss"}],"..\\..\\..\\..\\AppData\\Local\\Yarn\\Data\\global\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

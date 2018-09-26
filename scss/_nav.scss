@@ -1,9 +1,53 @@
 nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-height: 5rem;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  border: 1px solid red;
   ul {
+    padding: 0;
+    margin: 0;
     li {
+      padding: 5px 0px;
       list-style: none;
       a {
         @include navLinksNoStyle;
+      }
+    }
+  }
+}
+
+#hamburger-menu {
+  justify-self: end;
+  align-self: center;
+  margin-right: 1.2rem;
+  position: absolute;
+  right: 0px;
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #555;
+    @include easeOut();
+  }
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
       }
     }
   }

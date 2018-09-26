@@ -806,8 +806,57 @@ template {
 [hidden] {
   display: none; }
 
-nav ul li {
-  list-style: none; }
-  nav ul li a {
-    color: inherit;
-    text-decoration: none; }
+nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-height: 5rem;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  border: 1px solid red; }
+  nav ul {
+    padding: 0;
+    margin: 0; }
+    nav ul li {
+      padding: 5px 0px;
+      list-style: none; }
+      nav ul li a {
+        color: inherit;
+        text-decoration: none; }
+
+#hamburger-menu {
+  justify-self: end;
+  align-self: center;
+  margin-right: 1.2rem;
+  position: absolute;
+  right: 0px; }
+  #hamburger-menu .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #555;
+    transition: all 0.5s ease-out; }
+  #hamburger-menu.close {
+    transform: rotate(180deg); }
+    #hamburger-menu.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    #hamburger-menu.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    #hamburger-menu.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+body,
+html {
+  font-size: 10px;
+  height: 100%;
+  width: 100%; }
+
+body {
+  display: grid;
+  grid-template-rows: minmax(min-content, max-content);
+  grid-template-columns: 1fr; }
+
+.hidden {
+  display: none; }

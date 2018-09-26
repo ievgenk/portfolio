@@ -2,3 +2,7 @@
   color: inherit;
   text-decoration: none;
 }
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
