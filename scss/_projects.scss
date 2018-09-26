@@ -1,6 +1,7 @@
 #projects {
   @include sectionFlexBox();
   h1 {
+    font-size: $mainHeaderMobile;
     @include sectionHeader();
   }
   .headline-underline {

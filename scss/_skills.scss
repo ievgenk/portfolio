@@ -1,4 +1,6 @@
 #skills {
+  padding: 1rem;
+
   #hovering-laptop {
     @include svg("../images/laptop.svg", 120px, 120px);
     position: relative;
@@ -27,6 +29,7 @@
 
   @include sectionFlexBox();
   h1 {
+    font-size: $mainHeaderMobile;
     @include sectionHeader();
   }
   .headline-underline {
@@ -35,7 +38,7 @@
   .skill-header {
     align-self: flex-start;
     padding-left: 1.3rem;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -52,18 +55,40 @@
   }
   .skills-container {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    svg {
-      width: 5rem;
-      height: 5rem;
-      flex: 1;
+    ul.list-of-skills {
+      width: 100%;
+      margin: 0;
+      padding: 0 0 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-row-gap: 0.5rem;
+
+      li {
+        list-style: none;
+        flex: 1;
+        font-size: 1.7rem;
+      }
+      li::before {
+        background-color: $primaryBlue;
+        border-radius: 3px;
+        content: "";
+        display: inline-block;
+        min-height: 5px;
+        margin-right: 1rem;
+        min-width: 5px;
+        margin-bottom: 1px;
+      }
     }
-  }
-  .skills-container.back-end {
-    svg {
-      height: rem;
-      flex: 1 1 auto;
+
+    ul.list-of-skills.back-end {
+      li::before {
+        background-color: $secondaryGreen;
+      }
+    }
+    ul.list-of-skills.tooling {
+      li::before {
+        background-color: $purple;
+      }
     }
   }
 }
