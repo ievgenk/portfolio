@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
 @import "variables";
 @import "mixins";
 @import "../node_modules/normalize-scss/sass/normalize/import-now";
 @include normalize();
 @import "nav";
+@import "main";
+@import "about";
 
 //General Styles
 
@@ -11,14 +14,8 @@ html {
   font-size: 10px;
   height: 100%;
   width: 100%;
-}
-
-//Body Grid
-
-body {
-  display: grid;
-  grid-template-rows: minmax(min-content, max-content);
-  grid-template-columns: 1fr;
+  font-family: "Karla", sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 .hidden {

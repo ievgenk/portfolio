@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -814,21 +815,23 @@ nav {
   height: 5rem;
   position: fixed;
   top: 0;
-  border: 1px solid black;
   font-size: 2rem; }
   nav #logo {
     flex: 0 1 100%;
     align-self: center;
     font-weight: 700;
-    margin-left: 1rem; }
+    margin-left: 2rem;
+    font-size: 2.5rem; }
   nav ul {
+    z-index: 1;
+    background-color: white;
     transition: all 0.5s ease-out;
     top: 6rem;
-    text-align: center;
+    text-align: left;
     padding: 0 0 0 10px;
     margin: 0;
     width: 90%;
-    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
     height: fit-content;
     display: block;
     position: absolute; }
@@ -861,16 +864,56 @@ nav {
     #hamburger-menu.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
+main {
+  position: absolute;
+  top: 5rem;
+  display: grid;
+  overflow: auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+  grid-template-rows: minmax(min-content, max-content);
+  row-gap: 2rem; }
+  main h1 {
+    justify-self: center; }
+
+#about {
+  margin-top: 12rem;
+  min-height: 25vh;
+  width: 80vw;
+  border: 2px solid grey;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.3);
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: -2; }
+  #about #avatar {
+    background-image: url("avatar.713aa54e.svg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    justify-self: center; }
+  #about .card-top {
+    width: 100%;
+    height: 5rem;
+    background-color: #f4f4f4;
+    border-bottom: 1px lightgray solid; }
+  #about #heading {
+    text-align: center;
+    font-size: 1.3rem; }
+
 body,
 html {
   font-size: 10px;
   height: 100%;
-  width: 100%; }
-
-body {
-  display: grid;
-  grid-template-rows: minmax(min-content, max-content);
-  grid-template-columns: 1fr; }
+  width: 100%;
+  font-family: "Karla", sans-serif;
+  text-rendering: optimizeLegibility; }
 
 .hidden {
   opacity: 0;
