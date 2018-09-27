@@ -37,10 +37,21 @@
       padding: 1rem;
       font-size: $projectInfo;
       margin: 0;
+      color: #4383a3;
     }
     .tech-used {
       display: flex;
       justify-content: space-evenly;
+      .tech-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        .tech-header {
+          font-size: 1.5rem;
+        }
+      }
       svg {
         margin: 0.5rem 0 0.5rem 0;
         width: 4rem;
