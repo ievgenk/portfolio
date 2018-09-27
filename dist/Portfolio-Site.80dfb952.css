@@ -1089,10 +1089,9 @@ main {
         flex: 1; }
         #projects .project-card .tech-used .tech-info .tech-header {
           font-size: 1.5rem; }
-      #projects .project-card .tech-used svg {
+      #projects .project-card .tech-used i {
         margin: 0.5rem 0 0.5rem 0;
-        width: 4rem;
-        height: 4rem;
+        font-size: 4rem;
         flex: 1; }
 
 body,
