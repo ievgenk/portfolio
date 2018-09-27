@@ -2,7 +2,11 @@
   color: inherit;
   text-decoration: none;
 }
-
+@mixin cardLinks($color) {
+  color: $color;
+  text-decoration: none;
+  font-weight: bold;
+}
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }

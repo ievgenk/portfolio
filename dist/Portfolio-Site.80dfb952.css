@@ -930,12 +930,12 @@ main {
     #bio .bio-container .bio-text {
       max-width: 40rem;
       line-height: 2.2rem;
-      font-size: 2rem;
+      font-size: 1.8rem;
       text-align: left;
       letter-spacing: 0.2px; }
 
 #skills {
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -980,8 +980,28 @@ main {
     font-size: 1.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem; }
-  #skills .skill-header::before {
+  #skills .skill-header.front-end::before {
+    background-color: #4383a3;
+    border-radius: 3px;
+    box-shadow: 0 0 0 6px rgba(67, 131, 163, 0.2);
+    content: "";
+    display: inline-block;
+    min-height: 7px;
+    margin-right: 1rem;
+    min-width: 7px;
+    margin-bottom: 1px; }
+  #skills .skill-header.back-end::before {
     background-color: #1bc29e;
+    border-radius: 3px;
+    box-shadow: 0 0 0 6px rgba(67, 131, 163, 0.2);
+    content: "";
+    display: inline-block;
+    min-height: 7px;
+    margin-right: 1rem;
+    min-width: 7px;
+    margin-bottom: 1px; }
+  #skills .skill-header.tooling::before {
+    background-color: #ae43a6;
     border-radius: 3px;
     box-shadow: 0 0 0 6px rgba(67, 131, 163, 0.2);
     content: "";
@@ -1030,6 +1050,41 @@ main {
     height: 2px;
     width: 3rem;
     border-top: 2px solid #4383a3; }
+  #projects .project-card {
+    margin-top: 2rem;
+    width: 85vw;
+    border: 1px groove rgba(67, 131, 163, 0.5);
+    box-shadow: 0px 5px 20px rgba(67, 131, 163, 0.39); }
+    #projects .project-card .project-name {
+      padding: 1rem;
+      margin: 0;
+      font-size: 2rem; }
+    #projects .project-card img {
+      border-top: 1px solid rgba(67, 131, 163, 0.5);
+      border-bottom: 1px solid rgba(67, 131, 163, 0.5);
+      width: 100%; }
+    #projects .project-card .project-information {
+      padding: 1rem;
+      font-size: 1.8rem; }
+      #projects .project-card .project-information a {
+        color: #4383a3;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.3rem 0.3rem 0.3rem 0; }
+      #projects .project-card .project-information p {
+        margin: 1rem 0 0 0; }
+    #projects .project-card .made-with {
+      padding: 1rem;
+      font-size: 1.8rem;
+      margin: 0; }
+    #projects .project-card .tech-used {
+      display: flex;
+      justify-content: space-evenly; }
+      #projects .project-card .tech-used svg {
+        margin: 0.5rem 0 0.5rem 0;
+        width: 4rem;
+        height: 4rem;
+        flex: 1; }
 
 body,
 html {
