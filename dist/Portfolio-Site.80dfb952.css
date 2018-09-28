@@ -911,9 +911,15 @@ main {
   main h1 {
     justify-self: center; }
   main section {
-    margin: 2rem 0 2rem 0; }
+    margin: 1rem 0 1rem 0; }
     main section hr {
       margin-bottom: 1rem; }
+
+@media (min-width: 1200px) {
+  section {
+    margin: 2rem 0 2rem 0; }
+    section hr {
+      margin-bottom: 1rem; } }
 
 #about {
   border-radius: 3px;
@@ -956,7 +962,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    width: 90%; }
 
 @media (min-width: 620px) {
   #heading {
@@ -988,7 +995,7 @@ main {
     width: 3rem;
     border-top: 2px solid #4383a3; }
   #bio .bio-container {
-    padding: 0rem 2rem; }
+    width: 90%; }
     #bio .bio-container .bio-text {
       max-width: 40rem;
       line-height: 2.2rem;
@@ -1069,6 +1076,8 @@ main {
     font-size: 1.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem; }
+  #skills .skill-wrapper {
+    width: 90%; }
   #skills .skill-header.front-end::before {
     background-color: #4383a3;
     border-radius: 3px;
