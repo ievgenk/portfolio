@@ -1,0 +1,29 @@
+#contact {
+  align-items: flex-start;
+
+  h3 {
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+  @include sectionFlexBox();
+  h1 {
+    font-size: $mainHeaderMobile;
+    @include sectionHeader();
+  }
+  .headline-underline {
+    @include headlineUnderline();
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .contact-unit {
+      margin: 1rem;
+      i {
+        font-size: 4rem;
+        color: $primaryBlue;
+      }
+    }
+  }
+}
