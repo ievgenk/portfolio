@@ -119,5 +119,29 @@
   #skills {
     width: 80%;
     padding: 0;
+    #skill-wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 2rem;
+    }
+    .skill-header {
+      padding-bottom: 0;
+    }
+
+    .skills-container {
+      ul.list-of-skills {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  #skills .skill-header.front-end::before {
+    margin-bottom: 3px;
+  }
+  #skills .skill-header.back-end::before {
+    margin-bottom: 3px;
+  }
+  #skills .skill-header.tooling::before {
+    margin-bottom: 3px;
   }
 }
