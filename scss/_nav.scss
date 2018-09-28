@@ -50,16 +50,17 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 80%;
+    a {
+      @include navLinksNoStyle();
+    }
     li {
       list-style: none;
       cursor: pointer;
+
       &:hover {
         color: $primaryBlue;
         transition: all 0.2s ease;
         border-bottom: 5px solid $secondaryGreen;
-      }
-      a {
-        @include navLinksNoStyle();
       }
     }
   }

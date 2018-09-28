@@ -855,6 +855,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 80%; }
+    nav .desktop-nav a {
+      color: inherit;
+      text-decoration: none; }
     nav .desktop-nav li {
       list-style: none;
       cursor: pointer; }
@@ -862,9 +865,6 @@ nav {
         color: #4383a3;
         transition: all 0.2s ease;
         border-bottom: 5px solid #1bc29e; }
-      nav .desktop-nav li a {
-        color: inherit;
-        text-decoration: none; }
 
 #hamburger-menu {
   justify-self: end;
