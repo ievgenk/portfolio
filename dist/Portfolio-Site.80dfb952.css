@@ -994,6 +994,9 @@ main {
     height: 2px;
     width: 3rem;
     border-top: 2px solid #4383a3; }
+    @media (min-width: 1200px) {
+      #bio .headline-underline {
+        width: 6rem; } }
   #bio .bio-container {
     width: 90%; }
     #bio .bio-container .bio-text {
@@ -1027,7 +1030,9 @@ main {
 
 @media (min-width: 1200px) {
   #bio {
-    width: 80%; } }
+    width: 80%; }
+    #bio h1 {
+      font-size: 3.5rem; } }
 
 #skills {
   padding: 1.5rem;
@@ -1070,6 +1075,9 @@ main {
     height: 2px;
     width: 3rem;
     border-top: 2px solid #4383a3; }
+    @media (min-width: 1200px) {
+      #skills .headline-underline {
+        width: 6rem; } }
   #skills .skill-header {
     align-self: flex-start;
     padding-left: 1.3rem;
@@ -1139,6 +1147,8 @@ main {
   #skills {
     width: 80%;
     padding: 0; }
+    #skills h1 {
+      font-size: 3.5rem; }
     #skills #skill-wrapper {
       width: 100%;
       display: grid;
@@ -1168,6 +1178,9 @@ main {
     height: 2px;
     width: 3rem;
     border-top: 2px solid #4383a3; }
+    @media (min-width: 1200px) {
+      #projects .headline-underline {
+        width: 6rem; } }
   #projects .project-card {
     border-radius: 3px;
     margin-top: 2rem;
@@ -1234,6 +1247,8 @@ main {
       border-bottom: 1px solid rgba(27, 194, 158, 0.5); }
 
 @media (min-width: 1200px) {
+  #projects h1 {
+    font-size: 3.5rem; }
   #projects .projects-container {
     max-width: 80vw;
     display: grid;
@@ -1260,6 +1275,9 @@ main {
     height: 2px;
     width: 3rem;
     border-top: 2px solid #4383a3; }
+    @media (min-width: 1200px) {
+      #contact .headline-underline {
+        width: 6rem; } }
   #contact .contact-info {
     display: flex;
     justify-content: space-around;
@@ -1272,6 +1290,10 @@ main {
       #contact .contact-info .contact-unit:hover i {
         transition: all 0.5s ease;
         color: #1bc29e; }
+
+@media (min-width: 1200px) {
+  #contact h1 {
+    font-size: 3.5rem; } }
 
 footer {
   width: 100%;
