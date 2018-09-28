@@ -218,7 +218,31 @@ var hideNav = function hideNav() {
 navItems.forEach(function (item) {
   return item.addEventListener("click", hideNav);
 });
-hamburgerMenu.addEventListener("click", toggleMenu);
+hamburgerMenu.addEventListener("click", toggleMenu); //Smooth Scrolling Jquery Implementation
+
+$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
+  if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+
+    if (target.length) {
+      event.preventDefault();
+      $("html, body").animate({
+        scrollTop: target.offset().top
+      }, 1000, function () {
+        var $target = $(target);
+        $target.focus();
+
+        if ($target.is(":focus")) {
+          return false;
+        } else {
+          $target.attr("tabindex", "-1");
+          $target.focus();
+        }
+      });
+    }
+  }
+});
 },{"./scss/index.scss":"../scss/index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

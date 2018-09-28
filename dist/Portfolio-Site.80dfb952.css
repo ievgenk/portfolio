@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Karla:400,700");
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
@@ -825,6 +826,9 @@ nav {
     font-weight: 700;
     margin-left: 2rem;
     font-size: 2.5rem; }
+    nav #logo a {
+      color: inherit;
+      text-decoration: none; }
   nav ul {
     z-index: 1;
     background-color: white;
@@ -886,7 +890,7 @@ main {
   width: 80vw;
   border: 2px solid grey;
   border-radius: 3px;
-  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -907,7 +911,8 @@ main {
   #about .card-top {
     width: 100%;
     height: 5rem;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231bc29e' fill-opacity='0.56'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     border-bottom: 1px lightgray solid; }
   #about #heading {
     text-align: center;
@@ -934,6 +939,19 @@ main {
       font-size: 1.8rem;
       text-align: left;
       letter-spacing: 0.2px; }
+    #bio .bio-container ul {
+      list-style: none;
+      padding: 0; }
+    #bio .bio-container li {
+      font-size: 1.8rem;
+      padding: 0.2rem 0; }
+    #bio .bio-container li:before {
+      padding-right: 1rem;
+      content: "🐶"; }
+    #bio .bio-container li:nth-child(2):before {
+      content: "🐉"; }
+    #bio .bio-container li:nth-child(3):before {
+      content: "🏂🏼"; }
 
 #skills {
   padding: 1.5rem;

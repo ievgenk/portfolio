@@ -16,5 +16,23 @@
       text-align: left;
       letter-spacing: 0.2px;
     }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      font-size: 1.8rem;
+      padding: 0.2rem 0;
+    }
+    li:before {
+      padding-right: 1rem;
+      content: "🐶";
+    }
+    li:nth-child(2):before {
+      content: "🐉";
+    }
+    li:nth-child(3):before {
+      content: "🏂🏼";
+    }
   }
 }
