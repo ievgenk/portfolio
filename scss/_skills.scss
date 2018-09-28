@@ -42,8 +42,8 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  .skill-wrapper {
-    width: 90%;
+  #skill-wrapper {
+    width: 100%;
   }
   .skill-header.front-end::before {
     background-color: $primaryBlue;
@@ -126,7 +126,6 @@
       font-size: 3.5rem;
     }
     #skill-wrapper {
-      width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 2rem;
