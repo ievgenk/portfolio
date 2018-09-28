@@ -45,36 +45,14 @@ hamburgerMenu.addEventListener("click", toggleMenu);
 
 //Smooth Scrolling Jquery Implementation
 
-$('a[href*="#"]')
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+$('a[href*="#"]').on("click", function(e) {
+  e.preventDefault();
 
-      if (target.length) {
-        event.preventDefault();
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top
-          },
-          1000,
-          function() {
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) {
-              return false;
-            } else {
-              $target.attr("tabindex", "-1");
-              $target.focus();
-            }
-          }
-        );
-      }
-    }
-  });
+  $("html, body").animate(
+    {
+      scrollTop: $($(this).attr("href")).offset().top - 50
+    },
+    700,
+    "linear"
+  );
+});
