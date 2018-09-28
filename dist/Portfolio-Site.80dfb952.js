@@ -183,7 +183,8 @@ require("./scss/index.scss");
 
 // DOM Varialbes
 var hamburgerMenu = document.getElementById("hamburger-menu");
-var nav = document.querySelector(".nav"); // DOM Store
+var nav = document.querySelector(".nav");
+var navItems = document.querySelectorAll(".nav-item"); // DOM Store
 
 var STORE = {
   hamurgerMenuOpen: false
@@ -199,9 +200,24 @@ var toggleMenu = function toggleMenu() {
     hamburgerMenu.classList.remove("close");
     STORE.hamurgerMenuOpen = false;
   }
+};
+
+var hideNav = function hideNav() {
+  if (STORE.hamurgerMenuOpen) {
+    nav.classList.add("hidden");
+    hamburgerMenu.classList.remove("close");
+    STORE.hamurgerMenuOpen = false;
+  } else {
+    nav.classList.remove("hidden");
+    hamburgerMenu.classList.add("close");
+    STORE.hamurgerMenuOpen = true;
+  }
 }; // Event Listeners
 
 
+navItems.forEach(function (item) {
+  return item.addEventListener("click", hideNav);
+});
 hamburgerMenu.addEventListener("click", toggleMenu);
 },{"./scss/index.scss":"../scss/index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
