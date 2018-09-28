@@ -85,3 +85,17 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  #projects {
+    .projects-container {
+      max-width: 80vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+      .project-card {
+        width: 100%;
+      }
+    }
+  }
+}

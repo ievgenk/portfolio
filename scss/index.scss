@@ -27,3 +27,10 @@ html {
   opacity: 0;
   visibility: hidden;
 }
+
+@media (min-width: 1200px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}

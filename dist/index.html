@@ -19,7 +19,16 @@
       <a href="#top">&lt;Kasian Dev &#47;&gt;</a>
     </span>
 
-    <!-- Navigation Menu -->
+
+    <ul class="desktop-nav">
+      <li class=""><a href="#about">About</a></li>
+      <li class=""><a href="#skills">Skills</a></li>
+      <li class=""><a href="#projects">Projects</a></li>
+      <li class=""><a href="/__\assets\Evgeny_Kasian_Resume.pdf" target="”_blank”">Resume</a></li>
+      <li class=""><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Navigation Menu Mobile-->
 
     <ul class="nav hidden">
       <li class="nav-item"><a href="#about">About</a></li>
@@ -44,7 +53,7 @@
     <!-- About Section -->
 
     <section id="about">
-      <div id="avatar"></div>
+      <i id="avatar"></i>
       <div class="card-top"></div>
       <div id="heading">
         <h2>Hi, my name is Evgeny.<br> I am a web developer with project management background. </h2>
@@ -121,110 +130,114 @@
     <section id="projects">
       <h1>Projects</h1>
       <hr class="headline-underline">
+      <div class="projects-container">
+        <!-- Applio -->
 
-      <!-- Applio -->
+        <div class="project-card applio">
+          <h3 class="project-name">Appl.io</h3>
+          <img src="https://res.cloudinary.com/kasiandev/image/upload/v1538070072/projects/Appl.io_49.png" alt="Appl.io home page screenshot">
+          <div class="project-information">
+            <a href="https://appl-io.herokuapp.com/">Live</a>
+            <a href="https://github.com/ievgenk/appl.io-client">GitHub</a><br>
+            <p>Job application tracker inspired by kanban methodology. Create a work card with position's details. Then
+              move it to an appropriate board through the lifecycle of the application.</p>
+          </div>
+          <h3 class="made-with">Made With:</h3>
+          <div class="tech-used">
+            <span class="tech-info">
+              <i class="devicon-react-original colored"></i>
+              <h3 class="tech-header">React</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-nodejs-plain colored"></i>
+              <h3 class="tech-header">Node.js</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-express-original colored"></i>
+              <h3 class="tech-header">Express</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-mongodb-plain colored"></i>
+              <h3 class="tech-header">MongoDB</h3>
+            </span>
 
-      <div class="project-card applio">
-        <h3 class="project-name">Appl.io</h3>
-        <img src="https://res.cloudinary.com/kasiandev/image/upload/v1538070072/projects/Appl.io_49.png" alt="Appl.io home page screenshot">
-        <div class="project-information">
-          <a href="https://appl-io.herokuapp.com/">Live</a>
-          <a href="https://github.com/ievgenk/appl.io-client">GitHub</a><br>
-          <p>Job application tracker inspired by kanban methodology. Create a work card with position's details. Then
-            move it to an appropriate board through the lifecycle of the application.</p>
+          </div>
         </div>
-        <h3 class="made-with">Made With:</h3>
-        <div class="tech-used">
-          <span class="tech-info">
-            <i class="devicon-react-original colored"></i>
-            <h3 class="tech-header">React</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-nodejs-plain colored"></i>
-            <h3 class="tech-header">Node.js</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-express-original colored"></i>
-            <h3 class="tech-header">Express</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-mongodb-plain colored"></i>
-            <h3 class="tech-header">MongoDB</h3>
-          </span>
 
+        <!-- Build A Budget -->
+
+        <div class="project-card build-a-budget">
+          <h3 class="project-name">Build A Budget</h3>
+          <img src="https://res.cloudinary.com/kasiandev/image/upload/v1538070073/projects/Build-A-Budget_1_1_49.png" alt="Build A Budget home page screenshot">
+          <div class="project-information">
+            <a href="http://build-a-budget.herokuapp.com/">Live</a>
+            <a href="https://github.com/ievgenk/build-a-budget">GitHub</a><br>
+            <p>Budgeting application to keep track of personal finances. User can create custom category and
+              subcategory
+              to classify expenses. Provides visual charts of monthly spending. </p>
+          </div>
+          <h3 class="made-with">Made With:</h3>
+          <div class="tech-used">
+            <span class="tech-info">
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <h3 class="tech-header">HTML</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <h3 class="tech-header">CSS</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-nodejs-plain colored"></i>
+              <h3 class="tech-header">Node.js</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-express-original colored"></i>
+              <h3 class="tech-header">Express</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-mocha-plain colored"></i>
+              <h3 class="tech-header">Mocha</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-mongodb-plain colored"></i>
+              <h3 class="tech-header">MongoDB</h3>
+            </span>
+
+          </div>
+        </div>
+
+        <!-- Adopt A Paw -->
+
+        <div class="project-card">
+          <h3 class="project-name">Adopt A Paw</h3>
+          <img src="https://res.cloudinary.com/kasiandev/image/upload/v1538070072/projects/Adopt-A-Paw_1_49.png" alt="Build Adopt A Paw home page screenshot">
+          <div class="project-information">
+            <a href="https://ievgenk.github.io/adopt-a-paw/">Live</a>
+            <a href="https://github.com/ievgenk/adopt-a-paw">GitHub</a><br>
+            <p>A pet adoption app that helps users to find dogs that can be adopted near their location. Results of the
+              search are displayed on a map. Additional information about specific breed provided via wikipedia api.
+            </p>
+          </div>
+          <h3 class="made-with">Made With:</h3>
+          <div class="tech-used">
+            <span class="tech-info">
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <h3 class="tech-header">HTML</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <h3 class="tech-header">CSS</h3>
+            </span>
+            <span class="tech-info">
+              <i class="devicon-javascript-plain colored"></i>
+              <h3 class="tech-header">JavaScript</h3>
+            </span>
+
+
+          </div>
         </div>
       </div>
 
-      <!-- Build A Budget -->
-
-      <div class="project-card build-a-budget">
-        <h3 class="project-name">Build A Budget</h3>
-        <img src="https://res.cloudinary.com/kasiandev/image/upload/v1538070073/projects/Build-A-Budget_1_1_49.png" alt="Build A Budget home page screenshot">
-        <div class="project-information">
-          <a href="http://build-a-budget.herokuapp.com/">Live</a>
-          <a href="https://github.com/ievgenk/build-a-budget">GitHub</a><br>
-          <p>Budgeting application to keep track of personal finances. User can create custom category and subcategory
-            to classify expenses. Provides visual charts of monthly spending. </p>
-        </div>
-        <h3 class="made-with">Made With:</h3>
-        <div class="tech-used">
-          <span class="tech-info">
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <h3 class="tech-header">HTML</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-css3-plain-wordmark colored"></i>
-            <h3 class="tech-header">CSS</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-nodejs-plain colored"></i>
-            <h3 class="tech-header">Node.js</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-express-original colored"></i>
-            <h3 class="tech-header">Express</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-mocha-plain colored"></i>
-            <h3 class="tech-header">Mocha</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-mongodb-plain colored"></i>
-            <h3 class="tech-header">MongoDB</h3>
-          </span>
-
-        </div>
-      </div>
-
-      <!-- Adopt A Paw -->
-
-      <div class="project-card">
-        <h3 class="project-name">Adopt A Paw</h3>
-        <img src="https://res.cloudinary.com/kasiandev/image/upload/v1538070072/projects/Adopt-A-Paw_1_49.png" alt="Build Adopt A Paw home page screenshot">
-        <div class="project-information">
-          <a href="https://ievgenk.github.io/adopt-a-paw/">Live</a>
-          <a href="https://github.com/ievgenk/adopt-a-paw">GitHub</a><br>
-          <p>A pet adoption app that helps users to find dogs that can be adopted near their location. Results of the
-            search are displayed on a map. Additional information about specific breed provided via wikipedia api. </p>
-        </div>
-        <h3 class="made-with">Made With:</h3>
-        <div class="tech-used">
-          <span class="tech-info">
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <h3 class="tech-header">HTML</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-css3-plain-wordmark colored"></i>
-            <h3 class="tech-header">CSS</h3>
-          </span>
-          <span class="tech-info">
-            <i class="devicon-javascript-plain colored"></i>
-            <h3 class="tech-header">JavaScript</h3>
-          </span>
-
-
-        </div>
-      </div>
 
 
     </section>

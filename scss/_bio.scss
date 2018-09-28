@@ -36,3 +36,22 @@
     }
   }
 }
+
+@media (min-width: 620px) {
+  #bio {
+    width: 90%;
+    .bio-container {
+      width: 100%;
+      p.bio-text {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #bio {
+    width: 80%;
+  }
+}

@@ -22,7 +22,7 @@ nav {
     }
   }
 
-  ul {
+  ul.nav {
     z-index: 1;
     background-color: white;
     @include easeOut();
@@ -38,6 +38,25 @@ nav {
     li {
       padding: 5px 0px;
       list-style: none;
+      a {
+        @include navLinksNoStyle();
+      }
+    }
+  }
+
+  .desktop-nav {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    li {
+      list-style: none;
+      cursor: pointer;
+      &:hover {
+        color: $primaryBlue;
+        transition: all 0.2s ease;
+        border-bottom: 5px solid $secondaryGreen;
+      }
       a {
         @include navLinksNoStyle();
       }
@@ -75,6 +94,20 @@ nav {
       &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
       }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav {
+    .desktop-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
     }
   }
 }
