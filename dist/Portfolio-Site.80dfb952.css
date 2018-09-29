@@ -1199,11 +1199,36 @@ main {
     #projects .project-card .project-information {
       padding: 1rem;
       font-size: 1.8rem; }
+      #projects .project-card .project-information .project-button {
+        background-color: #4383a3;
+        border-radius: 10vh;
+        border: none;
+        margin: 0 0.5rem 0 0.5rem;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+      #projects .project-card .project-information .project-button.build {
+        background-color: #1bc29e;
+        border-radius: 10vh;
+        border: none;
+        margin: 0 0.5rem 0 0.5rem;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        #projects .project-card .project-information .project-button.build a {
+          color: #fff; }
+      #projects .project-card .project-information .project-button.applio {
+        background-color: #ae43a6;
+        border-radius: 10vh;
+        border: none;
+        margin: 0 0.5rem 0 0.5rem;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        #projects .project-card .project-information .project-button.applio a {
+          color: #fff; }
       #projects .project-card .project-information a {
-        color: #4383a3;
+        color: #fff;
         text-decoration: none;
         font-weight: bold;
-        padding: 0.3rem 0.7rem 0.3rem 0; }
+        text-align: center; }
       #projects .project-card .project-information p {
         margin: 1rem 0 0 0; }
     #projects .project-card .made-with {

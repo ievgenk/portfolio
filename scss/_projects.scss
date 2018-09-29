@@ -26,9 +26,24 @@
     .project-information {
       padding: 1rem;
       font-size: $projectInfo;
+      .project-button {
+        @include projectLinkBtn($primaryBlue);
+      }
+      .project-button.build {
+        @include projectLinkBtn($secondaryGreen);
+        a {
+          color: #fff;
+        }
+      }
+      .project-button.applio {
+        @include projectLinkBtn($purple);
+        a {
+          color: #fff;
+        }
+      }
       a {
-        @include cardLinks(#4383a3);
-        padding: 0.3rem 0.7rem 0.3rem 0;
+        @include cardLinks(#fff);
+        text-align: center;
       }
       p {
         margin: 1rem 0 0 0;
