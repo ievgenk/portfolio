@@ -99,6 +99,7 @@
       flex-direction: row;
       #hovering-laptop {
         @include svg("../images/laptop.svg", 35rem, 35rem);
+        left: 10rem;
       }
     }
     width: 80%;
